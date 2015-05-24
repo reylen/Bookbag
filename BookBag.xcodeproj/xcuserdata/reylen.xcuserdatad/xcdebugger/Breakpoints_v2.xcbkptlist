@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BookBag/BBRootViewController.m"
-            timestampString = "454130293.746187"
+            timestampString = "454136352.247627"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "-tapAction:"
             landmarkType = "5">
          </BreakpointContent>

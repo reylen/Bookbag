@@ -20,14 +20,29 @@
 {
     [_window release];
     [_viewController release];
+    [_currentBookBagID release];
     
     [super dealloc];
+}
+
+- (void)setCurrentBookBagID:(NSString *)currentBookBagID {
+    
+    if (_currentBookBagID != currentBookBagID) {
+        _currentBookBagID = currentBookBagID;
+        if (_viewController && _viewController.tableView) {
+            _viewController.tableView.hidden = NO;
+            [_viewController.tableView reloadData];
+        }
+
+    }
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     CGRect frame = [UIScreen mainScreen].bounds;
     self.window = [[[UIWindow alloc]initWithFrame:frame] autorelease];
+    
+    self.currentBookBagID = [[NSUserDefaults standardUserDefaults] stringForKey:Current_Bag_Id];
     
     self.viewController = [[[BBRootViewController alloc]initWithNibName:nil bundle:nil] autorelease];
     self.viewController.title = @"我的书包";

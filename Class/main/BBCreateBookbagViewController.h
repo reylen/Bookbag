@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MBProgressHUD.h"
 
-@interface BBCreateBookbagViewController : UIViewController
+@interface BBCreateBookbagViewController : UIViewController<MBProgressHUDDelegate>
+
 @property (retain, nonatomic) IBOutlet UITextField *textField;
 
 @end

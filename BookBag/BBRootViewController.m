@@ -7,12 +7,22 @@
 //
 
 #import "BBRootViewController.h"
+#import "PublicUtils.h"
+#import "AppDelegate.h"
 
 @interface BBRootViewController ()<UITableViewDataSource,UITableViewDelegate>
+
 @property (retain, nonatomic)   NSArray *dataArray;
+
 @end
 
 @implementation BBRootViewController
+
+- (AppDelegate *) appDelegate {
+    
+    return (AppDelegate *)[UIApplication sharedApplication].delegate;
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -43,8 +53,10 @@
 //    _button2.backgroundColor = [UIColor whiteColor];
 //    _button3.backgroundColor = [UIColor whiteColor];
     self.navigationItem.rightBarButtonItem  = [[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(settingAction:)] autorelease];
+    if ([PublicUtils myBookbagsArray].count == 0) {
+        self.tableView.hidden = YES;
+    }
     
-    self.tableView.hidden = YES;
     self.infoButton.titleLabel.numberOfLines = 0;
     self.infoButton.titleLabel.textAlignment = NSTextAlignmentCenter;
 }
@@ -74,6 +86,9 @@
 }
 
 - (IBAction)button2TouchAction:(id)sender {
+    
+    BBBookbagListController *list = [[[BBBookbagListController alloc]initWithStyle:UITableViewStyleGrouped] autorelease];
+    [self.navigationController pushViewController:list  animated:YES];
 }
 
 - (IBAction)button3TouchAction:(id)sender {
@@ -87,7 +102,13 @@
 #pragma mark - TableView Delegate
 
 - (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
-    return [self.dataArray count];
+    
+    if ([self appDelegate].currentBookBagID) {
+        return [self.dataArray count];
+    }
+    
+    return 0;
+    
 }
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -102,9 +123,11 @@
 
 - (NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     
+    NSDictionary *info = [PublicUtils bookBagInfoWithID:[self appDelegate].currentBookBagID];
+    NSString *title = [info objectForKey:@"title"];
     switch (section) {
         case 0:
-            return @"书包";
+            return [NSString stringWithFormat:@"书包［%@］",title];
             break;
         case 1:
             return @"电子书包";
@@ -131,6 +154,11 @@
     cell.imageView.image = [UIImage imageNamed:[infoArray lastObject]];
     
     return cell;
+}
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

@@ -19,6 +19,9 @@
 		2E7662611B117ACB0000B067 /* BBCreateBookbagViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E76625F1B117ACB0000B067 /* BBCreateBookbagViewController.xib */; };
 		2E7662651B117EE40000B067 /* UIColor+ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7662641B117EE40000B067 /* UIColor+ex.m */; };
 		2E7662681B117F440000B067 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7662671B117F440000B067 /* UIImage+Color.m */; };
+		2E76626B1B1187090000B067 /* PublicUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E76626A1B1187090000B067 /* PublicUtils.m */; };
+		2E76626E1B118B920000B067 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E76626D1B118B920000B067 /* MBProgressHUD.m */; };
+		2E7662711B119C1F0000B067 /* BBBookbagListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7662701B119C1F0000B067 /* BBBookbagListController.m */; };
 		2EA1D3F21B10A4CE00E890B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1D3F11B10A4CE00E890B4 /* main.m */; };
 		2EA1D3F51B10A4CE00E890B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1D3F41B10A4CE00E890B4 /* AppDelegate.m */; };
 		2EA1D3FD1B10A4CE00E890B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1D3FC1B10A4CE00E890B4 /* Images.xcassets */; };
@@ -62,6 +65,12 @@
 		2E7662641B117EE40000B067 /* UIColor+ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ex.m"; sourceTree = "<group>"; };
 		2E7662661B117F440000B067 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
 		2E7662671B117F440000B067 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		2E7662691B1187090000B067 /* PublicUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicUtils.h; sourceTree = "<group>"; };
+		2E76626A1B1187090000B067 /* PublicUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicUtils.m; sourceTree = "<group>"; };
+		2E76626C1B118B920000B067 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		2E76626D1B118B920000B067 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		2E76626F1B119C1F0000B067 /* BBBookbagListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBBookbagListController.h; sourceTree = "<group>"; };
+		2E7662701B119C1F0000B067 /* BBBookbagListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBBookbagListController.m; sourceTree = "<group>"; };
 		2EA1D3EC1B10A4CE00E890B4 /* BookBag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookBag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA1D3F01B10A4CE00E890B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EA1D3F11B10A4CE00E890B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -118,6 +127,8 @@
 				2E76625D1B117ACB0000B067 /* BBCreateBookbagViewController.h */,
 				2E76625E1B117ACB0000B067 /* BBCreateBookbagViewController.m */,
 				2E76625F1B117ACB0000B067 /* BBCreateBookbagViewController.xib */,
+				2E76626F1B119C1F0000B067 /* BBBookbagListController.h */,
+				2E7662701B119C1F0000B067 /* BBBookbagListController.m */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -125,10 +136,14 @@
 		2E7662621B117EBF0000B067 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				2E76626C1B118B920000B067 /* MBProgressHUD.h */,
+				2E76626D1B118B920000B067 /* MBProgressHUD.m */,
 				2E7662631B117EE40000B067 /* UIColor+ex.h */,
 				2E7662641B117EE40000B067 /* UIColor+ex.m */,
 				2E7662661B117F440000B067 /* UIImage+Color.h */,
 				2E7662671B117F440000B067 /* UIImage+Color.m */,
+				2E7662691B1187090000B067 /* PublicUtils.h */,
+				2E76626A1B1187090000B067 /* PublicUtils.m */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -359,12 +374,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7662711B119C1F0000B067 /* BBBookbagListController.m in Sources */,
 				2EA1D3F51B10A4CE00E890B4 /* AppDelegate.m in Sources */,
 				2EA1D41E1B10A58F00E890B4 /* BBRootViewController.m in Sources */,
 				2E7662601B117ACB0000B067 /* BBCreateBookbagViewController.m in Sources */,
 				2E7662681B117F440000B067 /* UIImage+Color.m in Sources */,
 				2E7662651B117EE40000B067 /* UIColor+ex.m in Sources */,
 				2EA1D3F21B10A4CE00E890B4 /* main.m in Sources */,
+				2E76626B1B1187090000B067 /* PublicUtils.m in Sources */,
+				2E76626E1B118B920000B067 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
