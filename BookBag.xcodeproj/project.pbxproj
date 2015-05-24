@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E76624D1B1171370000B067 /* efiles@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E76624B1B1171370000B067 /* efiles@2x.png */; };
+		2E76624E1B1171370000B067 /* efiles@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E76624C1B1171370000B067 /* efiles@3x.png */; };
+		2E7662511B1172170000B067 /* ePractice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E76624F1B1172170000B067 /* ePractice@2x.png */; };
+		2E7662521B1172170000B067 /* ePractice@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7662501B1172170000B067 /* ePractice@3x.png */; };
+		2E7662551B1172900000B067 /* tool@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7662531B1172900000B067 /* tool@2x.png */; };
+		2E7662561B1172900000B067 /* tool@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7662541B1172900000B067 /* tool@3x.png */; };
+		2E76625A1B1174F60000B067 /* launcher_text@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7662581B1174F60000B067 /* launcher_text@3x.png */; };
+		2E76625B1B1174F60000B067 /* launcher_text@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7662591B1174F60000B067 /* launcher_text@2x.png */; };
+		2E7662601B117ACB0000B067 /* BBCreateBookbagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E76625E1B117ACB0000B067 /* BBCreateBookbagViewController.m */; };
+		2E7662611B117ACB0000B067 /* BBCreateBookbagViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E76625F1B117ACB0000B067 /* BBCreateBookbagViewController.xib */; };
+		2E7662651B117EE40000B067 /* UIColor+ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7662641B117EE40000B067 /* UIColor+ex.m */; };
+		2E7662681B117F440000B067 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7662671B117F440000B067 /* UIImage+Color.m */; };
+		2EA1D3F21B10A4CE00E890B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1D3F11B10A4CE00E890B4 /* main.m */; };
+		2EA1D3F51B10A4CE00E890B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1D3F41B10A4CE00E890B4 /* AppDelegate.m */; };
+		2EA1D3FD1B10A4CE00E890B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1D3FC1B10A4CE00E890B4 /* Images.xcassets */; };
+		2EA1D4001B10A4CE00E890B4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1D3FE1B10A4CE00E890B4 /* LaunchScreen.xib */; };
+		2EA1D40C1B10A4CE00E890B4 /* BookBagTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1D40B1B10A4CE00E890B4 /* BookBagTests.m */; };
+		2EA1D41E1B10A58F00E890B4 /* BBRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1D41C1B10A58F00E890B4 /* BBRootViewController.m */; };
+		2EA1D41F1B10A58F00E890B4 /* BBRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1D41D1B10A58F00E890B4 /* BBRootViewController.xib */; };
+		2EA1D4231B10B4B900E890B4 /* barBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1D4221B10B4B900E890B4 /* barBack.png */; };
+		2EA1D4261B10B52C00E890B4 /* bookbagConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1D4251B10B52C00E890B4 /* bookbagConfig.plist */; };
+		2EA1D4291B10BBDC00E890B4 /* book@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1D4271B10BBDC00E890B4 /* book@3x.png */; };
+		2EA1D42A1B10BBDC00E890B4 /* book@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1D4281B10BBDC00E890B4 /* book@2x.png */; };
+		2EA1D4331B10BE6E00E890B4 /* files@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1D4311B10BE6E00E890B4 /* files@3x.png */; };
+		2EA1D4341B10BE6E00E890B4 /* files@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1D4321B10BE6E00E890B4 /* files@2x.png */; };
+		2EA1D4381B10C07B00E890B4 /* defaulf@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1D4361B10C07B00E890B4 /* defaulf@2x.png */; };
+		2EA1D4391B10C07B00E890B4 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1D4371B10C07B00E890B4 /* default.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2EA1D4061B10A4CE00E890B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EA1D3E41B10A4CE00E890B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EA1D3EB1B10A4CE00E890B4;
+			remoteInfo = BookBag;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E76624B1B1171370000B067 /* efiles@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "efiles@2x.png"; sourceTree = "<group>"; };
+		2E76624C1B1171370000B067 /* efiles@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "efiles@3x.png"; sourceTree = "<group>"; };
+		2E76624F1B1172170000B067 /* ePractice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ePractice@2x.png"; sourceTree = "<group>"; };
+		2E7662501B1172170000B067 /* ePractice@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ePractice@3x.png"; sourceTree = "<group>"; };
+		2E7662531B1172900000B067 /* tool@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tool@2x.png"; sourceTree = "<group>"; };
+		2E7662541B1172900000B067 /* tool@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tool@3x.png"; sourceTree = "<group>"; };
+		2E7662581B1174F60000B067 /* launcher_text@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launcher_text@3x.png"; sourceTree = "<group>"; };
+		2E7662591B1174F60000B067 /* launcher_text@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launcher_text@2x.png"; sourceTree = "<group>"; };
+		2E76625D1B117ACB0000B067 /* BBCreateBookbagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCreateBookbagViewController.h; sourceTree = "<group>"; };
+		2E76625E1B117ACB0000B067 /* BBCreateBookbagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCreateBookbagViewController.m; sourceTree = "<group>"; };
+		2E76625F1B117ACB0000B067 /* BBCreateBookbagViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBCreateBookbagViewController.xib; sourceTree = "<group>"; };
+		2E7662631B117EE40000B067 /* UIColor+ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ex.h"; sourceTree = "<group>"; };
+		2E7662641B117EE40000B067 /* UIColor+ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ex.m"; sourceTree = "<group>"; };
+		2E7662661B117F440000B067 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		2E7662671B117F440000B067 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		2EA1D3EC1B10A4CE00E890B4 /* BookBag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookBag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EA1D3F01B10A4CE00E890B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA1D3F11B10A4CE00E890B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2EA1D3F31B10A4CE00E890B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2EA1D3F41B10A4CE00E890B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2EA1D3FC1B10A4CE00E890B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2EA1D3FF1B10A4CE00E890B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2EA1D4051B10A4CE00E890B4 /* BookBagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookBagTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EA1D40A1B10A4CE00E890B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA1D40B1B10A4CE00E890B4 /* BookBagTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookBagTests.m; sourceTree = "<group>"; };
+		2EA1D41B1B10A58F00E890B4 /* BBRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBRootViewController.h; sourceTree = "<group>"; };
+		2EA1D41C1B10A58F00E890B4 /* BBRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBRootViewController.m; sourceTree = "<group>"; };
+		2EA1D41D1B10A58F00E890B4 /* BBRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBRootViewController.xib; sourceTree = "<group>"; };
+		2EA1D4221B10B4B900E890B4 /* barBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barBack.png; sourceTree = "<group>"; };
+		2EA1D4251B10B52C00E890B4 /* bookbagConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bookbagConfig.plist; sourceTree = "<group>"; };
+		2EA1D4271B10BBDC00E890B4 /* book@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "book@3x.png"; sourceTree = "<group>"; };
+		2EA1D4281B10BBDC00E890B4 /* book@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "book@2x.png"; sourceTree = "<group>"; };
+		2EA1D4311B10BE6E00E890B4 /* files@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "files@3x.png"; sourceTree = "<group>"; };
+		2EA1D4321B10BE6E00E890B4 /* files@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "files@2x.png"; sourceTree = "<group>"; };
+		2EA1D4361B10C07B00E890B4 /* defaulf@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "defaulf@2x.png"; sourceTree = "<group>"; };
+		2EA1D4371B10C07B00E890B4 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EA1D3E91B10A4CE00E890B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EA1D4021B10A4CE00E890B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E7662571B11737D0000B067 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				2E7662621B117EBF0000B067 /* Public */,
+				2E76625C1B117AA40000B067 /* main */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		2E76625C1B117AA40000B067 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				2E76625D1B117ACB0000B067 /* BBCreateBookbagViewController.h */,
+				2E76625E1B117ACB0000B067 /* BBCreateBookbagViewController.m */,
+				2E76625F1B117ACB0000B067 /* BBCreateBookbagViewController.xib */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		2E7662621B117EBF0000B067 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				2E7662631B117EE40000B067 /* UIColor+ex.h */,
+				2E7662641B117EE40000B067 /* UIColor+ex.m */,
+				2E7662661B117F440000B067 /* UIImage+Color.h */,
+				2E7662671B117F440000B067 /* UIImage+Color.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		2EA1D3E31B10A4CE00E890B4 = {
+			isa = PBXGroup;
+			children = (
+				2E7662571B11737D0000B067 /* Class */,
+				2EA1D3EE1B10A4CE00E890B4 /* BookBag */,
+				2EA1D4201B10B4A600E890B4 /* Resources */,
+				2EA1D4081B10A4CE00E890B4 /* BookBagTests */,
+				2EA1D3ED1B10A4CE00E890B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2EA1D3ED1B10A4CE00E890B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1D3EC1B10A4CE00E890B4 /* BookBag.app */,
+				2EA1D4051B10A4CE00E890B4 /* BookBagTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EA1D3EE1B10A4CE00E890B4 /* BookBag */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1D41B1B10A58F00E890B4 /* BBRootViewController.h */,
+				2EA1D41C1B10A58F00E890B4 /* BBRootViewController.m */,
+				2EA1D41D1B10A58F00E890B4 /* BBRootViewController.xib */,
+				2EA1D3F31B10A4CE00E890B4 /* AppDelegate.h */,
+				2EA1D3F41B10A4CE00E890B4 /* AppDelegate.m */,
+				2EA1D3FC1B10A4CE00E890B4 /* Images.xcassets */,
+				2EA1D3FE1B10A4CE00E890B4 /* LaunchScreen.xib */,
+				2EA1D3EF1B10A4CE00E890B4 /* Supporting Files */,
+			);
+			path = BookBag;
+			sourceTree = "<group>";
+		};
+		2EA1D3EF1B10A4CE00E890B4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1D3F01B10A4CE00E890B4 /* Info.plist */,
+				2EA1D3F11B10A4CE00E890B4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2EA1D4081B10A4CE00E890B4 /* BookBagTests */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1D40B1B10A4CE00E890B4 /* BookBagTests.m */,
+				2EA1D4091B10A4CE00E890B4 /* Supporting Files */,
+			);
+			path = BookBagTests;
+			sourceTree = "<group>";
+		};
+		2EA1D4091B10A4CE00E890B4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1D40A1B10A4CE00E890B4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2EA1D4201B10B4A600E890B4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1D4351B10C07400E890B4 /* icon */,
+				2EA1D4241B10B51000E890B4 /* config */,
+				2EA1D4211B10B4B300E890B4 /* image */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2EA1D4211B10B4B300E890B4 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				2E7662531B1172900000B067 /* tool@2x.png */,
+				2E7662541B1172900000B067 /* tool@3x.png */,
+				2EA1D4311B10BE6E00E890B4 /* files@3x.png */,
+				2EA1D4321B10BE6E00E890B4 /* files@2x.png */,
+				2EA1D4271B10BBDC00E890B4 /* book@3x.png */,
+				2EA1D4281B10BBDC00E890B4 /* book@2x.png */,
+				2E76624F1B1172170000B067 /* ePractice@2x.png */,
+				2E7662501B1172170000B067 /* ePractice@3x.png */,
+				2E76624B1B1171370000B067 /* efiles@2x.png */,
+				2E76624C1B1171370000B067 /* efiles@3x.png */,
+				2EA1D4221B10B4B900E890B4 /* barBack.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		2EA1D4241B10B51000E890B4 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1D4251B10B52C00E890B4 /* bookbagConfig.plist */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		2EA1D4351B10C07400E890B4 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				2E7662581B1174F60000B067 /* launcher_text@3x.png */,
+				2E7662591B1174F60000B067 /* launcher_text@2x.png */,
+				2EA1D4361B10C07B00E890B4 /* defaulf@2x.png */,
+				2EA1D4371B10C07B00E890B4 /* default.png */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EA1D3EB1B10A4CE00E890B4 /* BookBag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EA1D40F1B10A4CE00E890B4 /* Build configuration list for PBXNativeTarget "BookBag" */;
+			buildPhases = (
+				2EA1D3E81B10A4CE00E890B4 /* Sources */,
+				2EA1D3E91B10A4CE00E890B4 /* Frameworks */,
+				2EA1D3EA1B10A4CE00E890B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BookBag;
+			productName = BookBag;
+			productReference = 2EA1D3EC1B10A4CE00E890B4 /* BookBag.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2EA1D4041B10A4CE00E890B4 /* BookBagTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EA1D4121B10A4CE00E890B4 /* Build configuration list for PBXNativeTarget "BookBagTests" */;
+			buildPhases = (
+				2EA1D4011B10A4CE00E890B4 /* Sources */,
+				2EA1D4021B10A4CE00E890B4 /* Frameworks */,
+				2EA1D4031B10A4CE00E890B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EA1D4071B10A4CE00E890B4 /* PBXTargetDependency */,
+			);
+			name = BookBagTests;
+			productName = BookBagTests;
+			productReference = 2EA1D4051B10A4CE00E890B4 /* BookBagTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EA1D3E41B10A4CE00E890B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ray;
+				TargetAttributes = {
+					2EA1D3EB1B10A4CE00E890B4 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 8LJX8Z5M79;
+					};
+					2EA1D4041B10A4CE00E890B4 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 2EA1D3EB1B10A4CE00E890B4;
+					};
+				};
+			};
+			buildConfigurationList = 2EA1D3E71B10A4CE00E890B4 /* Build configuration list for PBXProject "BookBag" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2EA1D3E31B10A4CE00E890B4;
+			productRefGroup = 2EA1D3ED1B10A4CE00E890B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EA1D3EB1B10A4CE00E890B4 /* BookBag */,
+				2EA1D4041B10A4CE00E890B4 /* BookBagTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EA1D3EA1B10A4CE00E890B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EA1D4231B10B4B900E890B4 /* barBack.png in Resources */,
+				2EA1D42A1B10BBDC00E890B4 /* book@2x.png in Resources */,
+				2EA1D4331B10BE6E00E890B4 /* files@3x.png in Resources */,
+				2E7662521B1172170000B067 /* ePractice@3x.png in Resources */,
+				2E7662561B1172900000B067 /* tool@3x.png in Resources */,
+				2E76624E1B1171370000B067 /* efiles@3x.png in Resources */,
+				2EA1D4001B10A4CE00E890B4 /* LaunchScreen.xib in Resources */,
+				2E7662551B1172900000B067 /* tool@2x.png in Resources */,
+				2EA1D4341B10BE6E00E890B4 /* files@2x.png in Resources */,
+				2EA1D4291B10BBDC00E890B4 /* book@3x.png in Resources */,
+				2E7662611B117ACB0000B067 /* BBCreateBookbagViewController.xib in Resources */,
+				2EA1D4261B10B52C00E890B4 /* bookbagConfig.plist in Resources */,
+				2E76625B1B1174F60000B067 /* launcher_text@2x.png in Resources */,
+				2EA1D4391B10C07B00E890B4 /* default.png in Resources */,
+				2E76624D1B1171370000B067 /* efiles@2x.png in Resources */,
+				2EA1D3FD1B10A4CE00E890B4 /* Images.xcassets in Resources */,
+				2E7662511B1172170000B067 /* ePractice@2x.png in Resources */,
+				2EA1D4381B10C07B00E890B4 /* defaulf@2x.png in Resources */,
+				2E76625A1B1174F60000B067 /* launcher_text@3x.png in Resources */,
+				2EA1D41F1B10A58F00E890B4 /* BBRootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EA1D4031B10A4CE00E890B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EA1D3E81B10A4CE00E890B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EA1D3F51B10A4CE00E890B4 /* AppDelegate.m in Sources */,
+				2EA1D41E1B10A58F00E890B4 /* BBRootViewController.m in Sources */,
+				2E7662601B117ACB0000B067 /* BBCreateBookbagViewController.m in Sources */,
+				2E7662681B117F440000B067 /* UIImage+Color.m in Sources */,
+				2E7662651B117EE40000B067 /* UIColor+ex.m in Sources */,
+				2EA1D3F21B10A4CE00E890B4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EA1D4011B10A4CE00E890B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EA1D40C1B10A4CE00E890B4 /* BookBagTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2EA1D4071B10A4CE00E890B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EA1D3EB1B10A4CE00E890B4 /* BookBag */;
+			targetProxy = 2EA1D4061B10A4CE00E890B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2EA1D3FE1B10A4CE00E890B4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EA1D3FF1B10A4CE00E890B4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2EA1D40D1B10A4CE00E890B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2EA1D40E1B10A4CE00E890B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2EA1D4101B10A4CE00E890B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = BookBag/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2EA1D4111B10A4CE00E890B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = BookBag/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2EA1D4131B10A4CE00E890B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BookBagTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookBag.app/BookBag";
+			};
+			name = Debug;
+		};
+		2EA1D4141B10A4CE00E890B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BookBagTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookBag.app/BookBag";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EA1D3E71B10A4CE00E890B4 /* Build configuration list for PBXProject "BookBag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EA1D40D1B10A4CE00E890B4 /* Debug */,
+				2EA1D40E1B10A4CE00E890B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EA1D40F1B10A4CE00E890B4 /* Build configuration list for PBXNativeTarget "BookBag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EA1D4101B10A4CE00E890B4 /* Debug */,
+				2EA1D4111B10A4CE00E890B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EA1D4121B10A4CE00E890B4 /* Build configuration list for PBXNativeTarget "BookBagTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EA1D4131B10A4CE00E890B4 /* Debug */,
+				2EA1D4141B10A4CE00E890B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EA1D3E41B10A4CE00E890B4 /* Project object */;
+}

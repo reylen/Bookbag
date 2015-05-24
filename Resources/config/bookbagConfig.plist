@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<array>
+			<string>我的书籍</string>
+			<string>book.png</string>
+		</array>
+		<array>
+			<string>我的文具</string>
+			<string>tool.png</string>
+		</array>
+		<array>
+			<string>我的资料</string>
+			<string>files.png</string>
+		</array>
+	</array>
+	<array>
+		<array>
+			<string>我的电子文档</string>
+			<string>efiles.png</string>
+		</array>
+		<array>
+			<string>我的电子作业</string>
+			<string>ePractice.png</string>
+		</array>
+	</array>
+</array>
+</plist>
